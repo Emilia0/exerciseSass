@@ -1,0 +1,9 @@
+$basic-background-color: cadetblue;
+$basic-font-color: white;
+
+.container  {
+  width: 100%;
+  height: 600px;
+  color: $basic-font-color;
+  background-color: $basic-background-color;
+}
