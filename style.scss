@@ -7,10 +7,21 @@ $primary-text:#212121;
 $secondary-text:#727272;
 $divider-color:#B6B6B6;
 
+$basic-font: Oswald;
+
+.clear  {
+  clear:both;
+}
+
+body{
+  font-family: $basic-font;
+}
+
 header {
   background-color: $basic;
   color: $simple;
   height: 200px;
+  text-align: center;
 }
 h4  {
   color: $basic-light;
@@ -22,31 +33,73 @@ nav {
 }
 
 .container {
-  width: 100%;
-  height: 600px;
+  width: 1600px;
+  padding: 0;
   color: $primary-text;
   background-color: $simple;
+  margin:auto;
+}
+.mainFunctions  {
+  height: 700px;
 }
 
-footer {
-  background-color: $accent-color;
-  height: 60px;
-}
 
 .functionBox  {
-  width: 50%;
-  height: 160px;
-  background-color: $basic-light;
-  box-sizing: border-box;
-  border: 10px solid $simple;
+  width: 400px;
+  height: 400px;
+  background-color: $simple;
+  float:left;
+  text-align: center;
+  margin-left: 100px;
+  margin-top:100px;
 
-
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
+    .image{
+      width:400px;
+      height: 400px;
+      display: inline-block;
+      background-image: url("images/city.jpg");
+      background-origin: border-box;
+    }
+  p {
+    background-color:$basic-light ;
+    color: $simple;
   }
+  }
+.first  {
+  background-position:0;
+}
+.second {
+  background-position:400px;
+}
+.third  {
+  background-position: 800px;
+}
+.mainPhoto  {
+  background-image: url("images/hills.jpg");
+  height:700px;
+  margin-top:100px;
+  margin-bottom: 100px;
+}
+
+footer  {
+  width: 100%;
+}
+
+.footerMain {
+  background-color: $accent-color;
+  color: $primary-text;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  font-size: smaller;
+}
+.footerBanner {
+  background-color:$secondary-text;
+  color: $simple;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 200;
+  font-size: smaller;
+
+}
